@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.login_taskapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Complete_Signup"
+            android:parentActivityName=".Upload_Document_Activity"></activity>
+        <activity android:name=".Upload_Document_Activity"
+            android:parentActivityName=".Fill_Details_Activity"/>
+        <activity android:name=".Business_Detail_Activity"
+           android:parentActivityName=".Login_Activity" />
+        <activity android:name=".Sign_in_Activity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".OTP_Activity" />
+        <activity
+            android:name=".Fill_Details_Activity"
+            android:parentActivityName=".Login_Activity" />
+        <activity
+            android:name=".Login_Activity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

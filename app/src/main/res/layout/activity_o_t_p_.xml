@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".OTP_Activity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/phone_icon"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="80dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:text="We have sent you access code"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_gravity="center"
+        android:text="VIA SMS for mobile number verification"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <EditText
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:textSize="10dp"
+            android:layout_weight="4"/>
+        <EditText
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:textSize="10dp"
+            android:layout_weight="4"/>
+        <EditText
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:textSize="10dp"
+            android:layout_weight="4"/>
+        <EditText
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:textSize="10dp"
+            android:maxEms="1"
+            android:layout_weight="4"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Confirm_btn_otp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_btn_style"
+        android:gravity="center"
+        android:text="CONFIRM"
+        android:textSize="15dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:text="Didn't receive OTP"
+            android:textColor="@color/black"
+            android:textSize="13dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="resend Code ?"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:text="Terms and conditions"
+            android:textColor="@color/black"
+            android:textSize="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textSize="10dp"
+            android:gravity="start"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:text="privacy policies"/>
+
+    </LinearLayout>
+</LinearLayout>
