@@ -28,15 +28,7 @@ public class Business_Detail_Activity extends AppCompatActivity {
 
         Indsutry_Category_AutoComplete_tv=(AutoCompleteTextView)findViewById(R.id.Indsutry_Category_AutoComplete);
         Designation_AutoComplete_tv=(AutoCompleteTextView)findViewById(R.id.Designation_AutoComplete);
-        business_detail_btn=(Button)findViewById(R.id.Business_detail_btn);
-
-        business_detail_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent in = new Intent(Business_Detail_Activity.this,Upload_Document_Activity.class);
-                startActivity(in);
-            }
-        });
+        business_detail_btn=(Button)findViewById(R.id.business_detail_btn_id);
 
         ArrayAdapter<String> adapter=new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item,Industry);
         ArrayAdapter<String> adapter2=new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item,Designation);
@@ -57,5 +49,10 @@ public class Business_Detail_Activity extends AppCompatActivity {
             }
         });
 
+    }
+
+    public void business_detail(View V10){
+        Intent in = new Intent(Business_Detail_Activity.this,Upload_Document_Activity.class);
+        startActivity(in);
     }
 }

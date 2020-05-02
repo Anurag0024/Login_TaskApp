@@ -66,13 +66,14 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/Confirm_btn_otp"
+        android:id="@+id/confrm_btn_otp_id"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:background="@drawable/round_btn_style"
         android:gravity="center"
+        android:onClick="confrm_otp"
         android:text="CONFIRM"
         android:textSize="15dp" />
 

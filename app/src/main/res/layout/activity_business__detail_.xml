@@ -154,13 +154,14 @@
 
 
     <Button
-        android:id="@+id/Business_detail_btn"
+        android:id="@+id/business_detail_btn_id"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:background="@drawable/round_btn_style"
         android:gravity="center"
+        android:onClick="business_detail"
         android:text="NEXT"
         android:textSize="15dp" />
 

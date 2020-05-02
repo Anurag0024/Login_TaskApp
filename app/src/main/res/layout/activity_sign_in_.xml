@@ -119,12 +119,13 @@
             android:textSize="10dp" />
 
         <TextView
-            android:id="@+id/Create_Account_One_Sign_in"
+            android:id="@+id/create_one_tv_id"
             android:layout_width="wrap_content"
             android:layout_height="20dp"
             android:layout_marginTop="8dp"
             android:textSize="10dp"
             android:gravity="start"
+            android:onClick="create_One"
             android:layout_weight="1"
             android:textStyle="bold"
             android:textColor="@color/black"

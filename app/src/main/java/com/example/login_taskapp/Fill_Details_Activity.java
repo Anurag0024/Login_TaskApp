@@ -14,10 +14,12 @@ import android.widget.DatePicker;
 import java.util.Calendar;
 
 public class Fill_Details_Activity extends AppCompatActivity {
-     Button Fill_detail_btn;
+     Button fill_detail_btn;
     DatePicker datePicker_Fill_details;
     ArrayAdapter<CharSequence> adapter;
     AutoCompleteTextView Gender_autoCompleteTextView;
+
+    private static final String[] gender = new String[]{"men", "women", "not say"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,15 +30,7 @@ public class Fill_Details_Activity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         Gender_autoCompleteTextView  = (AutoCompleteTextView) findViewById(R.id.gender_AutoComplete);
-        Fill_detail_btn=(findViewById(R.id.Next_Button_Fill_deatils));
-        Fill_detail_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent in = new Intent(Fill_Details_Activity.this,Upload_Document_Activity.class);
-                startActivity(in);
-            }
-        });
-
+        fill_detail_btn=(findViewById(R.id.next_btn_fill_detail_id));
 
        // datePicker_Fill_details=(DatePicker)findViewById(R.id.date_picker_DetailsFill);
 
@@ -65,5 +59,9 @@ public class Fill_Details_Activity extends AppCompatActivity {
         });
     }
 
-    private static final String[] gender = new String[]{"men", "women", "not say"};
+    public void fill_detail(View V8){
+        Intent in = new Intent(Fill_Details_Activity.this,Upload_Document_Activity.class);
+        startActivity(in);
+    }
+
 }

@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class OTP_Activity extends AppCompatActivity {
-    Button Confirm_otp_btn;
+    Button confrm_btn_otp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,14 +18,10 @@ public class OTP_Activity extends AppCompatActivity {
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        Confirm_otp_btn=(Button)findViewById(R.id.Confirm_btn_otp);
-        Confirm_otp_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent in = new Intent(OTP_Activity.this,Business_Detail_Activity.class);
-                startActivity(in);
-            }
-        });
+    }
 
+    public void confrm_otp(View V5){
+        Intent in = new Intent(OTP_Activity.this,Business_Detail_Activity.class);
+        startActivity(in);
     }
 }

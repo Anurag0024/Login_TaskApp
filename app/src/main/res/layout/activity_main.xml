@@ -18,22 +18,24 @@
         android:layout_marginTop="200dp"/>
 
     <Button
-        android:id="@+id/Main_SignIn_btn"
+        android:id="@+id/main_sign_btn_id"
         android:layout_width="270dp"
         android:layout_height="48dp"
         android:layout_marginTop="10dp"
         android:layout_gravity="center"
+        android:onClick="clicksign"
        android:gravity="center"
         android:background="@drawable/round_btn_style"
         android:textSize="15dp"
         android:text="Sign in"/>
 
     <Button
-        android:id="@+id/btn_account_create"
+        android:id="@+id/account_create_btn_id"
         android:layout_width="270dp"
         android:layout_height="48dp"
         android:layout_gravity="center"
         android:layout_marginTop="15dp"
+        android:onClick="create_account"
         android:background="@drawable/round_btn_style"
         android:text="Create Account"
         android:textSize="15dp" />

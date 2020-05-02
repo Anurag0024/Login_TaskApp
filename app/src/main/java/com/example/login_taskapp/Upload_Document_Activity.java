@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class Upload_Document_Activity extends AppCompatActivity {
-    Button upload_nxt_btn;
+    Button upload_btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,13 +18,11 @@ public class Upload_Document_Activity extends AppCompatActivity {
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        upload_nxt_btn=(Button)findViewById(R.id.upload_next_btn);
-        upload_nxt_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent  in = new Intent(Upload_Document_Activity.this,Complete_Signup.class);
-                startActivity(in);
-            }
-        });
+        upload_btn=(Button)findViewById(R.id.upload_btn_id);
+    }
+
+    public void upload_btn(View v6){
+        Intent  in = new Intent(Upload_Document_Activity.this,Complete_Signup.class);
+        startActivity(in);
     }
 }

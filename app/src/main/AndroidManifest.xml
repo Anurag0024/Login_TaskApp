@@ -9,21 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Complete_Signup"
-            android:parentActivityName=".Upload_Document_Activity"></activity>
-        <activity android:name=".Upload_Document_Activity"
-            android:parentActivityName=".Fill_Details_Activity"/>
-        <activity android:name=".Business_Detail_Activity"
-           android:parentActivityName=".Login_Activity" />
-        <activity android:name=".Sign_in_Activity"
-            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".Sign_up_Create_account"></activity>
+        <activity
+            android:name=".Complete_Signup"
+            android:parentActivityName=".Upload_Document_Activity" />
+        <activity
+            android:name=".Upload_Document_Activity"
+            android:parentActivityName=".Fill_Details_Activity" />
+        <activity
+            android:name=".Business_Detail_Activity"
+            android:parentActivityName=".Login_Activity" />
+        <activity
+            android:name=".Sign_in_Activity"
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".OTP_Activity" />
         <activity
             android:name=".Fill_Details_Activity"
             android:parentActivityName=".Login_Activity" />
-        <activity
-            android:name=".Login_Activity"
-            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
             android:theme="@style/Theme.Design.Light.NoActionBar">

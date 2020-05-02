@@ -25,13 +25,14 @@
         android:textSize="12dp" />
 
     <Button
-        android:id="@+id/upload_next_btn"
+        android:id="@+id/upload_btn_id"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="100dp"
         android:background="@drawable/round_btn_style"
         android:gravity="center"
+        android:onClick="upload_btn"
         android:text="NEXT"
         android:textSize="15dp" />
 

@@ -15,25 +15,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-       btn_account_create=(Button)findViewById(R.id.btn_account_create);
-       main_Sign_in_Btn=(Button)findViewById(R.id.Main_SignIn_btn);
+       btn_account_create=(Button)findViewById(R.id.account_create_btn_id);
+       main_Sign_in_Btn=(Button)findViewById(R.id.main_sign_btn_id);
+    }
 
-       main_Sign_in_Btn.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View view) {
-               Intent in =new Intent(MainActivity.this,Sign_in_Activity.class);
-               startActivity(in);
-           }
-       });
-       btn_account_create.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View view) {
-               Intent in = new Intent(MainActivity.this, Login_Activity.class);
-               startActivity(in);
-
-           }
-       });
-
-
+    public void clicksign(View V1){
+        Intent in= new Intent (MainActivity.this,Sign_in_Activity.class);
+        startActivity(in);
+    }
+    public void create_account(View V2){
+        Intent in= new Intent (MainActivity.this,Sign_up_Create_account.class);
+        startActivity(in);
     }
 }
