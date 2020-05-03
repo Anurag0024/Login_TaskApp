@@ -8,13 +8,17 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
 public class Sign_up_Create_account extends AppCompatActivity {
     Button nxt_btn_create;
     TextView login_here_tv;
+    RadioGroup radioGroup;
+    RadioButton radio_individual,radio_business;
     ArrayAdapter<CharSequence> adapter;
-    AutoCompleteTextView Country_autoCompleteTextView;
+    AutoCompleteTextView country_autofill_tv;
     private static final String[] countries = new String[]{"india", "Dubai", "pakistan", "america"};
 
     @Override
@@ -28,15 +32,17 @@ public class Sign_up_Create_account extends AppCompatActivity {
 
         nxt_btn_create=(Button)findViewById(R.id.nxt_btn_create_id);
         login_here_tv=(TextView)findViewById(R.id.login_here_tv_id);
-        Country_autoCompleteTextView  = (AutoCompleteTextView) findViewById(R.id.Country_Autofill);
+        country_autofill_tv  = (AutoCompleteTextView) findViewById(R.id.country_autofill_tvi_d);
+        radioGroup=(RadioGroup)findViewById(R.id.radio_group_login);
+        radio_business=(RadioButton)findViewById(R.id.business_radio_id);
+        radio_individual=(RadioButton)findViewById(R.id.individual_radio_id);
 
         ArrayAdapter<String> adapter=new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item,countries);
-        Country_autoCompleteTextView.setAdapter(adapter);
-
-        Country_autoCompleteTextView.setOnClickListener(new View.OnClickListener() {
+        country_autofill_tv.setAdapter(adapter);
+        country_autofill_tv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Country_autoCompleteTextView.showDropDown();
+                country_autofill_tv.showDropDown();
             }
         });
 
@@ -49,6 +55,28 @@ public class Sign_up_Create_account extends AppCompatActivity {
         Intent in= new Intent (Sign_up_Create_account.this,Sign_in_Activity.class);
         startActivity(in);
     }
+    public void check_button_individual(View V3){
+        nxt_btn_create.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+             Intent in=new Intent(Sign_up_Create_account.this,OTP_Activity.class);
+             startActivity(in);
+            }
+        });
+
+
+    }
+    public void check_button_business(View V4){
+        nxt_btn_create.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent in=new Intent(Sign_up_Create_account.this,Business_Detail_Activity.class);
+                startActivity(in);
+            }
+        });
+
+    }
+
 
 
     }

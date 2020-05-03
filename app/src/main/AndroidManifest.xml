@@ -18,14 +18,14 @@
             android:parentActivityName=".Fill_Details_Activity" />
         <activity
             android:name=".Business_Detail_Activity"
-            android:parentActivityName=".Login_Activity" />
+            android:parentActivityName=".Sign_up_Create_account" />
         <activity
             android:name=".Sign_in_Activity"
             android:parentActivityName=".MainActivity" />
         <activity android:name=".OTP_Activity" />
         <activity
             android:name=".Fill_Details_Activity"
-            android:parentActivityName=".Login_Activity" />
+            android:parentActivityName=".Sign_up_Create_account" />
         <activity
             android:name=".MainActivity"
             android:theme="@style/Theme.Design.Light.NoActionBar">
